@@ -1,0 +1,25 @@
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.user-nav__list {
+  margin: 0;
+  margin-block: 5px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-nav__item {
+  position: relative;
+}
+
+.user-nav__item a:has(.user-nav__icon) {
+  padding-inline-start: 24px;
+}
+
+.user-nav__icon {
+  position: absolute;
+  inset: 9px 9px 9px 0;
+}

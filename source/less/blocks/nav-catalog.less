@@ -1,0 +1,113 @@
+.nav-catalog {
+  display: flex;
+  position: relative;
+}
+.nav-catalog:focus-within {
+  outline-color: transparent;
+  outline: 2px #AF4FFF solid;
+}
+
+.nav-catalog__button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.nav-catalog__toggle {
+  inline-size: 50px;
+  block-size: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-catalog__button:focus,
+.nav-catalog__toggle:focus {
+  outline-color: transparent;
+}
+
+.nav-catalog__icon {
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+
+.nav-catalog__icon--opened {
+  display: none;
+}
+
+.nav-catalog__button+.nav-catalog__toggle {
+  margin-inline-start: 7px;
+}
+
+.nav-catalog__button:hover+.nav-catalog__toggle,
+.nav-catalog__button:active+.nav-catalog__toggle {
+  border-color: #000000;
+  opacity: 1;
+}
+
+.nav-catalog__button:hover+.nav-catalog__toggle .nav-catalog__icon,
+.nav-catalog__button:active+.nav-catalog__toggle .nav-catalog__icon {
+  fill-opacity: 1;
+}
+
+.nav-catalog__toggle:hover,
+.nav-catalog__toggle:active {
+  border-color: #000000;
+  opacity: 1;
+}
+
+.nav-catalog__toggle:hover .nav-catalog__icon,
+.nav-catalog__toggle:active .nav-catalog__icon {
+  fill-opacity: 1;
+}
+
+
+.nav-catalog__main-list {
+  display: none;
+  inline-size: 1100px;
+  max-block-size: 180px;
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: -60px;
+  margin: 0;
+  padding-inline-start: 60px;
+  padding-block: 14px 27px;
+  list-style-type: none;
+  background-color: #FFE17F;
+}
+
+.nav-catalog:focus-within .nav-catalog__main-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-catalog:focus-within .nav-catalog__icon--closed {
+  display: none;
+}
+
+.nav-catalog:focus-within .nav-catalog__icon--opened {
+  display: inline-block;
+  text-align: center;
+  padding-block-end: 3px;
+}
+
+.nav-catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-inline-size: 181px;
+  min-block-size: 120px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -15,3 +15,38 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  display: flex;
+  block-size: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: @yellowcover;
+  color: @black;
+  border: none;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: block-size 50ms ease-in;
+}
+
+.button:hover,
+.button:focus {
+  block-size: 40px;
+  transition: background-color 50ms ease-out;
+}
+
+.button:active {
+  background-color: @yellow;
+  transition: block-size 50ms ease-in, background-color 50ms ease-in;
+}
+
+.button:focus {
+  outline-color: transparent;
+  outline: 2px @violet solid;
+}
