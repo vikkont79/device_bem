@@ -1,0 +1,140 @@
+.page-footer {
+  background-color: @dark;
+}
+
+.page-footer a {
+  color: @light;
+  text-decoration: none;
+}
+
+.page-footer__wrapper {
+  inline-size: 1160px;
+  display: grid;
+  grid-template-columns: 236px 1fr 175px;
+  margin-inline: auto;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-block: 62px 35px;
+}
+
+.page-footer__logo .logo__icon {
+  fill: @yellowcover;
+}
+
+.page-footer__address {
+  position: relative;
+  margin: 0;
+  margin-block-end: 148px;
+  text-align: left;
+  color: @light;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-footer__address::after {
+  position: absolute;
+  content: "";
+  inline-size: 80px;
+  block-size: 7px;
+  left: 0;
+  top: 100px;
+  background-color: #FFC500;
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  align-items: center;
+  margin-block: 137px 61px;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-footer__link {
+  position: relative;
+}
+
+.page-footer__link:hover {
+  color: @yellowcover;
+}
+
+.page-footer__link:hover.page-footer__link::after {
+  position: absolute;
+  content: "";
+  inline-size: 100%;
+  block-size: 2px;
+  left: 0;
+  top: 25px;
+  background-color: @yellowcover;
+}
+
+.page-footer__link:active,
+.page-footer__link:active.page-footer__link::after {
+  opacity: 0.3;
+}
+
+.page-footer__link:focus {
+  border: 2px violet solid;
+  outline: none;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-footer__phone {
+  display: block;
+  margin: 0;
+  margin-block: 140px 63px;
+  text-align: right;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-footer__phone:hover {
+  color: @yellowcover;
+}
+
+.page-footer__phone:active {
+  opacity: 0.3;
+}
+
+.page-footer__phone:focus {
+  border: 2px @violet solid;
+}
+
+.page-footer__copyright {
+  display: block;
+  margin: 0;
+  text-align: right;
+}
+
+.page-footer__copyright svg {
+  fill: @yellowcover;
+}
+
+.page-footer__copyright:hover svg {
+  fill: @white;
+}
+
+.page-footer__copyright:active svg {
+  opacity: 0.3;
+}
+
+.page-footer__copyright:focus svg {
+  border: 2px violet solid;
+}
+
+
+
