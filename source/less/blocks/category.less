@@ -1,0 +1,36 @@
+.category {
+  inline-size: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category__img {
+  box-sizing: border-box;
+  block-size: 160px;
+  margin: 0;
+  margin-block-end: 32px;
+  padding-block-start: 40px;
+  text-align: center;
+  background-color: @yellow;
+  transition: background-color 50ms ease-out;
+}
+
+.index-catalog__link:hover .category__img {
+  background-color: @yellowcover;
+  transition: background-color 50ms ease-out;
+}
+
+.index-catalog__link:active .category__img {
+  background-color: @yellow;
+}
+
+.category__name {
+  margin: 0;
+  margin-block-end: 12px;
+  text-align: left;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
